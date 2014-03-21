@@ -1,0 +1,9 @@
+<?php // 3-7
+$author="Alfred E Newman";
+
+$text="This is a Headline
+
+This is the first line.
+This is the second.
+Written by $author.";
+?>

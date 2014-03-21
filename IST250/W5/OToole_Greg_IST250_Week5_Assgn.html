@@ -1,0 +1,160 @@
+<!--
+University: College of IST, Penn State
+Class: IST250
+Professor: Greg O'Toole
+Assignment: Week 5
+Author: Greg O'Toole
+Note: DON'T JUST COPY AND PASTE THE CODE TO TURN IN IF YOU KNOW HOW TO "VIEW SOURCE". YOU WON'T LEARN ANYTHING THAT WAY!!!****
+-->
+
+
+
+<!-- The properly formatted doctype tag tells the Web browser what kind of file its about to parse.
+	Mandatory: Yes
+	Close Tag: No
+--> 
+<!DOCTYPE HTML> 
+
+
+<!-- The properly formatted html tag tells the Web browser where to start parsing html, i.e. start looking for html tags.
+	Mandatory: Yes
+	Close Tag: Yes
+-->
+<html lang = "en">
+
+
+
+<!-- The properly formatted head tag tells the Web browser where meta information on the page can be found. Web browsers know, generally, don't show this info on the page.
+	Mandatory: Yes
+	Close Tag: Yes
+-->
+<head>
+<!-- Remember to include a short, descriptive title for your file ("page") --> 
+<title>W5 HTML Assignment</title>
+<!-- You always want to use this one --> 
+<!-- NEW** This is the syntax to define charset in html5, includes ASCII -->
+<meta charset="UTF-8"> 
+<!-- And all 3 of these -->
+<meta name="description" content="IST250 Week 4 Assignment">
+<meta name="keywords" content="HTML, IST250, Penn State">
+<meta name="author" content="Greg O'Toole">
+</head>
+
+
+<!-- Body Tag for all of the code that will render in the browser -->
+<body>
+
+
+
+<h1>IST250 Week 5 Assignment</h1>
+<h3>Student Name (First Last)</h3>
+<p>Directions: The week 5 assignment is to recreate this html page on your own. Be sure to do the following steps:
+	<ol>
+		<li>Recreate all elements on this page. (You don't have to recreate these directions, but you can recreate this section and add some text of your own.)</li>
+		<li>Include an html table.</li>
+		<li>Include an html form. </li>
+		<li>Be sure to include descriptive comments of each part explaining what your tags are doing.</li>
+		<li>Name the file: LastName_FirstName_IST250_Week5_Assgn.html</li>
+		</ol>
+</p>
+	
+	
+<p>Grading (25 pts): When your work is being graded, the following will be looked at:
+	<ul>
+		<li>The proper structure of your code overall.</li>
+		<li>Are all of your tags written properly? Open tags? Closed tags?</li>
+		<li>Did you create an HTML table properly? Does it work?</li>
+		<li>Did you create an HTML form properly? Does it work? (Simple email functionality is fine.) </li>
+		<li>Did you comment your code effectively?</li>
+		<li>Did you name the file properly?</li>
+	</ul>
+</p>
+
+
+
+
+<!-- This is a basic Web table that structures a basic Web form. - Web forms are useful for collecting user information, allowing for better communication and interaction, ecommerce, etc. -->
+
+
+<!-- Notice the form tag opens and closes. Notice the attributes used in this Web form. 
+Two HTTP Request Methods: GET and POST
+Two commonly used methods for a request-response between a client and server are: GET and POST:
+	GET - Requests data from a specified resource
+	POST - Submits data to be processed to a specified resource
+	http://www.w3schools.com/tags/ref_httpmethods.asp
+-->
+
+<form name="input" action="mailto:youremail@ist.psu.edu?subject=hello from my site" method="get">
+
+<!-- Once you have established that you will be using a Web form, decide what type of information you want to use. Here are several commonly used form field types. -->
+
+
+<!-- Text input type -->
+<table border="1px" bordercolor="#0099FF" cellpadding="3px" cellspacing="0">
+<tr><td width="170px">First Name:</td><td width="500px"><input type="text" name="firstname"></td></tr>
+<tr><td>Last Name:</td><td><input type="text" name="lastname"></td></tr>
+
+
+<!-- Radio buttons, another popular, useful Web form input type, good for "choose one" selections -->
+<tr><td>I prefer:</td>
+<td>
+<input type="radio" name="Time-of-Day" value="Day">Day
+<input type="radio" name="Time-of-Day" value="Night">Noon
+<input type="radio" name="Time-of-Day" value="Night">Night </td></tr>
+
+<!-- Checkboxes for many selections -->
+<tr><td>I drive a:</td>
+<td>
+<input type="checkbox" name="vehicle" value="Unicycle">Unicycle
+<input type="checkbox" name="vehicle" value="Bike">Bicycle
+<input type="checkbox" name="vehicle" value="Car">Car</td></tr>
+
+
+
+<!-- Datalist for many, predefined selections -->
+<tr><td>My Web Browser:</td><td>
+<input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+(Datalist doesn't work in Safari, IE)
+</td></tr>
+
+<tr><td><!-- Dropdown menu for many, predefined selections -->
+Pick a color:</td><td> 
+<select name="Color">
+  <option value="Red">Red</option>
+  <option value="Blue">Blue</option>
+  <option value="Green">Green</option>
+  <option value="Yellow">Yellow</option>
+</select>
+</td></tr>
+
+
+<tr><td><!-- The Password input type, encryption by default = Good  -->
+Password:</td><td><input type="password" name="pwd"></td></tr>
+
+<!-- The submit (or whatever you want to call it) button that processes the information -->
+<tr><td></td><td><input type="submit" value="Submit"></td></tr>
+
+</table>
+<!-- Always close your form tags -->
+</form> 
+
+
+
+
+</body>
+</html>
+
+	
+
+
+
+
+

@@ -1,0 +1,13 @@
+Unit 8 MySQL Lab
+
+
+Database: players
+Table: phillies
+Record: Cole Hammels
+
+Fields:
+Name		Datatype	Value
+Name		VARCHAR(128)	Cole Hammels
+Number 		TINYINT		35
+Position	VARCHAR(128)	starting left-handed pitcher
+ERA		FLOAT(3,2)		3.6

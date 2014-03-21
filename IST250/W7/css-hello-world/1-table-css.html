@@ -1,0 +1,133 @@
+
+<!-- The properly formatted doctype tag tells the Web browser what kind of file its about to parse.
+	Mandatory: Yes
+	Close Tag: No
+--> 
+<!DOCTYPE HTML>
+
+
+<!-- The properly formatted html tag tells the Web browser where to start parsing html, i.e. start looking for html tags.
+	Mandatory: Yes
+	Close Tag: Yes
+-->
+<html lang = "en">
+
+
+
+<!-- The properly formatted head tag tells the Web browser where meta information on the page can be found. Web browsers know, generally, don't show this info on the page.
+	Mandatory: Yes
+	Close Tag: Yes
+-->
+<head>
+	
+<!-- Remember to include a short, descriptive title for your file ("page") --> 
+<title>My First CSS & HTML Table</title>
+
+<!-- You always want to use this one --> 
+<!-- NEW** This is the syntax to define charset in html5, includes ASCII -->
+<meta charset="UTF-8"> 
+
+<!-- And all 3 of these -->
+<meta name="description" content="Introductory Tutorial to HTML5">
+<meta name="keywords" content="HTML, IST250, Penn State">
+<meta name="author" content="Greg O'Toole">
+
+
+<!-- This is some css ("cascading style sheets") that will style your text. -->
+<style type = "text/css">
+
+/* These are your selectors. These are where your browser tooks to in order to know how to display your content. */
+
+/* h1 and h2 are styled with the font face of Arial. */
+	h1, h2, h3, h4 {
+		font-family: Arial;
+	}
+
+/* All content in paragraph tags are set to display with a line height of 14 pixels. */	
+	p {
+		line-height: 14px;
+		font-family: Arial;
+	}
+
+/* This creates styles of your hr tags, or "horizontal rules". */	
+	hr {color: #666; width: 100%; size:1px;}
+	
+	
+	
+/* Styling tables gets more complex... */	
+	table, td, th {
+		padding: 2px;
+		border: 1px dotted green; 
+		border-spacing: 15px;
+	} 
+	
+
+/* A custom style set for the table.. */	
+	
+	table.my-nhl-table { 
+		font-family: Arial;
+		border: 1px solid black; 
+		border-spacing: 1px;
+	}
+	
+	td, th { 
+		padding: 5px 100px 10px 5px;
+		border: 1px dotted gray; 
+	}
+
+	
+</style>
+</head>
+
+
+
+<!-- Now start your body tag area. -->
+<!-- The properly formatted body tag tells the Web browser where to start presenting the information on the screen.
+	Mandatory: Yes
+	Close Tag: Yes
+-->
+
+<body>
+	
+<h1>In-Class Exercise</h1>
+<p>My Basic HTML Table Styled with CSS. Open up your text editor if you haven't already and get ready to create this table with code.</p>
+
+<hr>
+
+<h2>Example: NHL Teams by Coolness Ratings</h2>
+<p>Make the content about whatever you want, it doesn't matter! It's all about the css code here.</p>
+
+<table class="my-nhl-table">
+	<tr>
+		<th>Team</th>
+		<th>Division</th>
+		<th>Rating (10)</th>
+	</tr>
+
+	<tr>
+		<td>Flyers</td>
+		<td>Atlantic </td>
+		<td>10/10</td>
+	</tr>
+
+	<tr>
+		<td>Devils</td>
+		<td>Atlantic</td>
+		<td>9/10</td>
+	</tr>
+
+	<tr>
+		<td>Bruins</td>
+		<td>Northeast</td>
+		<td>8/10</td>
+	</tr>
+
+</table>
+</body>
+</html>	
+	
+
+
+
+
+

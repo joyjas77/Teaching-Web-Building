@@ -1,0 +1,119 @@
+
+<!-- The properly formatted doctype tag tells the Web browser what kind of file its about to parse.
+	Mandatory: Yes
+	Close Tag: No
+--> 
+<!DOCTYPE HTML>
+
+
+<!-- The properly formatted html tag tells the Web browser where to start parsing html, i.e. start looking for html tags.
+	Mandatory: Yes
+	Close Tag: Yes
+-->
+<html lang = "en">
+
+
+
+<!-- The properly formatted head tag tells the Web browser where meta information on the page can be found. Web browsers know, generally, don't show this info on the page.
+	Mandatory: Yes
+	Close Tag: Yes
+-->
+<head>
+	
+<!-- Remember to include a short, descriptive title for your file ("page") --> 
+<title>My First HTML Table</title>
+
+<!-- You always want to use this one --> 
+<!-- NEW** This is the syntax to define charset in html5, includes ASCII -->
+<meta charset="UTF-8"> 
+
+<!-- And all 3 of these -->
+<meta name="description" content="Introductory Tutorial to HTML5">
+<meta name="keywords" content="HTML, IST250, Penn State">
+<meta name="author" content="Greg O'Toole">
+
+
+<!-- This is some INTERNAL css ("cascading style sheets") that will style your text. -->
+<style type = "text/css">
+	
+	h1, h2, li, p {
+		font-family: Arial;
+	}
+	li.gray {
+		color: #999;
+	}
+	
+</style>
+
+
+<!-- This how you can "call" or "import" EXTERNAL css that will style your text. -->
+
+<LINK rel="stylesheet" media="aural" href="corporate-aural.css" type="text/css">
+<LINK rel="stylesheet" media="screen" href="corporate-screen.css" type="text/css">
+<LINK rel="stylesheet" media="print" href="corporate-print.css" type="text/css">
+<LINK rel="stylesheet" href="my-external-css-file.css" type="text/css">
+
+
+</head>
+
+
+
+<!-- Now start your body tag area. -->
+<!-- The properly formatted body tag tells the Web browser where to start presenting the information on the screen.
+	Mandatory: Yes
+	Close Tag: Yes
+-->
+
+<body>
+	
+<h1>Introduction to CSS (con't)</h1>
+
+
+<p><b>Some key info...</b> Some things to know</p>
+
+<p>1. Where does the code go (INTERNAL css)? Two places:</p>
+
+<ul>
+	<li>A. < style > code goes in the document < head > section.</li>
+	<li>B. "class" or "id" used in html.</li>
+</ul>
+	
+<p>2. Where does the code go (EXTERNAL css)? Two places:</p>
+
+<ul>
+	<li>A. < style > code goes in a separate file (.css)</li>
+			<ol><li>< LINK rel="stylesheet" href="my-external-css-file.css" type="text/css"> </li>
+				<li class="gray">< LINK rel="stylesheet" media="aural" href="corporate-aural.css" type="text/css"> </li>
+				<li class="gray">< LINK rel="stylesheet" media="screen" href="corporate-screen.css" type="text/css"> </li>
+				<li class="gray">< LINK rel="stylesheet" media="print" href="corporate-print.css" type="text/css"> </li>
+				
+			</ol>
+	<li>B. "class" or "id" used in html.</li>
+</ul>	
+	
+	
+<p>3. What does the code syntax (grammar) look like? Some vocabulary?</p>
+
+<ul>
+	<li>A. The code snippets in the < head > of your html file OR in the external .css file:</li>
+	<ul><li>Declaration - the code that contains the selector; the whole bit of code that goes in the page < head >.</li>
+	<ul><li>Selector - A “selector” is the instruction in a CSS rule set that tells the browser what elements to ‘select’ for styling.</li>
+	<li>Property - the attribute part of the declaration.</li>
+	<li>Property Value - the value that you assign to the property statement.</li></ul></ul>
+	<li>B. The code snippets in the < body > of your html file:</li>
+		<ul><li>ID (#) = A person's Identification (ID) is unique to one person.</li>
+	<li>Class (.) = There are many people in a class.</li></ul>
+</ul>
+
+<p>Good examples: <a href="http://www.impressivewebs.com/css-selectors/" title="CSS Selectors" target="new">www.impressivewebs.com/css-selectors</a></p>
+<p><b>Do more?</b> It's <a href="1-table-css.html" title="See the code" target="">Add it to your basic table</a>!... </p>
+
+
+</body>
+</html>	
+	
+
+
+
+
+

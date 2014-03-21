@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.directions {
+	color: #666;
+	font-family: "Arial";
+}
+
+.congrats {
+	font-family: Arial;
+	color: #267E0F;
+	font-weight: 600;
+	text-shadow: 2px 2px #cccccc;
+}

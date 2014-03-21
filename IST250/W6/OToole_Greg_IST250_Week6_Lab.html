@@ -1,0 +1,184 @@
+<!--
+University: College of IST, Penn StateClass: IST250Professor: Greg O'TooleLab: Week 6
+Author: Greg O'TooleNote: DON'T JUST COPY AND PASTE THE CODE TO TURN IN IF YOU KNOW HOW TO "VIEW SOURCE". YOU WON'T LEARN ANYTHING THAT WAY!!!****-->
+<!-- 
+The properly formatted doctype tag tells the Web browser what kind of file its about to parse.	Mandatory: Yes	Close Tag: No -->
+<!DOCTYPE html><!-- The properly formatted html tag tells the Web browser where to start parsing html, i.e. start looking for html tags.
+	Mandatory: Yes	Close Tag: Yes-->
+<html lang="en">
+  <!-- The properly formatted head tag tells the Web browser where meta information on the page can be found. Web browsers know, generally, don't show this info on the page.
+	Mandatory: Yes	Close Tag: Yes-->
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <!-- You always want to use this one -->
+    <!-- NEW** This is the syntax to define charset in html5, includes ASCII -->
+    <!-- Remember to include a short, descriptive title for your file ("page") -->
+    <title>W6 HTML</title>
+    <!-- And all 3 of these -->
+    <meta name="description" content="IST250 Week 4 Assignment">
+    <meta name="keywords" content="HTML, IST250, Penn State">
+    <meta name="author" content="Greg O'Toole">
+  </head>
+  <!-- Body Tag for all of the code that will render in the browser --> <body>
+    <h1>IST250 Week 6 Lab - Web Forms</h1>
+    <p>Open up Blue Griffon. Create this html page.</p>
+    <!-- This is a basic Web table that structures a basic Web form. - Web forms are useful for collecting user information, allowing for better communication and interaction, ecommerce, etc. -->
+    <!-- Notice the form tag opens and closes. Notice the attributes used in this Web form. 
+Two HTTP Request Methods: GET and POST --- Two commonly used methods for a request-response between a 
+client and server are: GET and POST:	
+GET - Requests data from a specified resource	
+POST - Submits data to be processed to a specified resource
+More good info:	http://www.w3schools.com/tags/ref_httpmethods.asp
+And: http://www.w3schools.com/tags/tag_form.asp -->
+    <form method="POST" action="mailto:someone@example.com" target="_self" name="Test Form" 
+	enctype="text/plain" accept-charset="utf-8">
+      <!-- Once you have established that you will be using a Web form, decide what type of information you want to use. Here are several commonly used form field types. -->
+      <!-- Text input type -->
+      <table border="1px" bordercolor="#0099FF" cellpadding="3px" cellspacing="0">
+        <tbody>
+          <tr>
+            <td colspan="2" >Basic HTML Web Form Input Types</td>
+          </tr>
+          <tr>
+            <td width="170px">First Name:</td>
+            <td width="500px"><input name="firstname" size="50" maxlength="50" required="required"
+
+                type="text"></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input name="lastname" type="text"></td>
+          </tr>
+          <!-- Radio buttons, another popular, useful Web form input type, good for "choose one" selections -->
+          <tr>
+            <td>Time of Day:</td>
+            <td> <input name="Time-of-Day" value="Day" type="radio">Day <input
+
+                name="Time-of-Day" value="Night" type="radio">Noon <input name="Time-of-Day"
+
+                value="Night" type="radio">Night </td>
+          </tr>
+          <!-- Checkboxes for many selections -->
+          <tr>
+            <td>I drive a:</td>
+            <td> <input name="vehicle" value="Unicycle" type="checkbox">Unicycle
+              <input name="vehicle" value="Bike" type="checkbox">Bicycle <input
+
+                name="vehicle" value="Car" type="checkbox">Car</td>
+          </tr>
+          <!-- Datalist for many, predefined selections -->
+          <tr>
+            <td>My Web Browser:</td>
+            <td> <input list="browsers"> <datalist id="browsers">
+                <option value="Internet Explorer"> </option>
+                <option value="Firefox"> </option>
+                <option value="Chrome"> </option>
+                <option value="Opera"> </option>
+                <option value="Safari"> </option>
+              </datalist> (Datalist doesn't work in Safari) </td>
+          </tr>
+          <tr>
+            <td><!-- Dropdown menu for many, predefined selections --> Pick a
+              color:</td>
+            <td>
+              <select name="Color">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>About You: </td>
+            <td><textarea rows="10" cols="50">The cat was playing in the garden.
+              </textarea></td>
+          </tr>
+          <tr>
+            <td><!-- The Password input type, encryption ONLY ON SCREEN  -->
+              Password:</td>
+            <td><input name="pwd" type="password"></td>
+          </tr>
+          <tr>
+            <td colspan="2">New HTML5 Web Form Input Types</td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td><a href="http://www.w3schools.com/html/html5_form_input_types.asp"
+
+                target="_blank" name="Demo">Demos</a> </td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Datetime</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Datetime-local</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Month</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Number</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Range</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Search</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Tel</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>URL</td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>Week</td>
+            <td><br>
+            </td>
+          </tr>
+          <!-- The submit (or whatever you want to call it) button that processes the information -->
+          <tr>
+            <td><br>
+            </td>
+            <td><input value="Submit" type="submit"> <input value="Reset" type="reset"></td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Always close your form tags --><br>
+      <br>
+    </form>
+    
+  </body>
+</html>
